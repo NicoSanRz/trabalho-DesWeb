@@ -147,7 +147,7 @@ body {font-family: "Lato", sans-serif}
         <input class="w3-input w3-border" type="text" placeholder="Digite aqui">
         <p><label><i class="fa fa-user"></i> Email</label></p>
         <input class="w3-input w3-border" type="text" placeholder="Insira um email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">DOAR<i class="fa fa-check"></i></button>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="alerta()">DOAR<i class="fa fa-check"></i></button>
         <button class="w3-button w3-red w3-section" onclick="document.getElementById('donateModal').style.display='none'">Fechar <i class="fa fa-remove"></i></button>
 
       </div>
@@ -223,6 +223,11 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+  
+//alerta de donate
+function alerta() {
+  alert("Doação enviada com sucesso!")
 }
 </script>
 
